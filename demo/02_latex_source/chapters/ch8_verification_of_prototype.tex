@@ -1,0 +1,19 @@
+% !TeX root = ../main.tex
+% Read docs/writing-guide.md for purpose, outline and common mistakes.
+\chapter{Verification of Prototype}
+\label{chap:verification_of_prototype}
+
+% Present results first; discuss their implications and limits separately.
+\section{Illustrative results}
+\label{sec:results}
+Table~\ref{tab:results} shows all six constructed durations.
+Concept A has a mean of \qty{60}{\second}; concept B has a mean of
+\qty{65}{\second}. The observations are fictional, not experimental evidence.
+\input{chapters/tables/tab_example_results}
+
+\section{Verification and limitations}
+Using Equation~\ref{eq:mean}, concept A meets R1 in
+Section~\ref{sec:requirements}, whereas concept B does not.
+Only the illustrative mean-duration criterion is assessed. The tiny invented
+sample cannot quantify reliability or support inference about real timers.
+A real evaluation would report uncertainty, repeatability and potential bias.

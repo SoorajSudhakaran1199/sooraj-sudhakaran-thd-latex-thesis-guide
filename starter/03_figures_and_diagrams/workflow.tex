@@ -1,0 +1,14 @@
+% Compile with: xelatex workflow.tex (from this directory).
+\documentclass[border=3pt]{standalone}
+\usepackage{fontspec}
+\IfFontExistsTF{Verdana}{\setmainfont{Verdana}}{\setmainfont{TeX Gyre Heros}}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}[font=\fontsize{12}{15}\selectfont]
+\node (a) at (0,0) {Requirements};
+\node (b) at (5,0) {Design};
+\node (c) at (10,0) {Verification};
+\draw[->,thick] (a) -- (b);
+\draw[->,thick] (b) -- (c);
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,37 @@
+% !TeX root = ../main.tex
+% Read docs/writing-guide.md for purpose, outline and common mistakes.
+\chapter{Simulation}
+\label{chap:simulation}
+
+% Specify model assumptions, inputs and limits before showing outputs.
+\section{Model and analysis method}
+\label{sec:methodology}
+The demonstration reduces each set of durations to its arithmetic mean.
+Equation~\ref{eq:mean} adds the durations and divides the total by their count.
+% equation supplies a number automatically; never type a number by hand.
+\begin{equation}
+\bar{t}=\frac{1}{n}\sum_{i=1}^{n}t_i .
+\label{eq:mean}
+\end{equation}
+The observation $t_i$ and mean $\bar{t}$ are measured in seconds.
+The count $n$ and index $i$ have no unit. With $n=3$, the sum for concept A
+is \qty{180}{\second}; division by three gives \qty{60}{\second}.
+
+\section{Fictional code example}
+\label{sec:code-example}
+Listing~\ref{lst:mean-example} implements only the arithmetic mean used in this
+teaching example. It is independently written demonstration code and is unrelated
+to any real thesis, company system or proprietary implementation.
+
+% The file path is relative to main.tex. The caption creates the list entry.
+% The label lets the surrounding prose reference the listing automatically.
+\lstinputlisting[
+  language=Python,
+  caption={Fictional Python example that calculates an arithmetic mean.},
+  label={lst:mean-example}
+]{code/example_mean.py}
+
+\section{Simulation boundary}
+This arithmetic example is not a physical sand-flow simulation. A real simulation
+chapter must define governing equations, boundary conditions, solver settings,
+convergence checks and comparison with independent evidence.

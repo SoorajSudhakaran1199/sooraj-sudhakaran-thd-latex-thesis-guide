@@ -1,0 +1,17 @@
+# Prepare a real submission separately
+
+This checklist records the inspected Górka guidance, not a guarantee that rules remain current for your programme. Obtain current instructions and forms from the university and supervisor. This public repository is not your final delivery package.
+
+- Confirm programme regulations, approved topic, registration and deadlines. Programme rules outrank the supervisor guidance, which outranks the general Campus Cham guideline (Górka p.8).
+- Use the programme-specific title and signed authorship statement. Resolve any restriction notice through the applicable institutional process; the fictional demo requires none.
+- Follow the nine-chapter flow or the agreed topic-specific adaptation. Retain a research hypothesis and verification by measurement or simulation. Verify the expected body length: Górka p.91 states 80 pages ±10% for master's work and 50 ±10% for bachelor's work, excluding lists and appendix.
+- The early core-content deliverable is distinct from the final thesis abstract: Górka pp.18-19 describes a two-page PDF with proposal/abstract and timeline. Do not substitute the final demo abstract for that deliverable.
+- Check final PDF contents, resolved links, bookmarks, page order, fonts, figures/tables, equations, appendix and reference completeness. No mandatory PDF/A setting was established in the inspected sources.
+- Prepare double-sided A4 printing with right-hand chapter starts and outer page numbers. Title and declaration are single-sided; blank reverse pages are intentional. Górka pp.82-84 describe the bound copy and colour printing.
+- Prepare the PDF and supporting work-file ZIP with machine-readable raw data and source assets. Use the professor's supplied delivery folder structure for the actual handover; the four educational directories here are a simplification, not its replacement.
+- Name delivered files according to the inspected `[YYMMDD]_[type]_[content]_v[version]` convention, with underscores rather than spaces (p.25). The delivery ZIP uses date, thesis type, student name and version (p.26). Do not use `demo-thesis.pdf` as an actual submission filename.
+- The delivery bundle also covers the applicable project plan, concepts, development/simulation/prototype files, verification records, lessons learned and colloquium presentation. Górka p.26 excludes the supplied guideline and registration-folder content from the handover ZIP. Follow the current portal's separate registration requirements.
+- Górka p.125 requires a separate IEEE-format paper, maximum ten pages, delivered in an editable format. The thesis class is not the paper template. The paper may be delivered by the presentation date under the inspected guidance (p.17).
+- The inspected guidance requires the bound thesis and PDF/work-file delivery and describes Primuss submission. Confirm current portal fields and delivery logistics, rather than relying on old contact details.
+- If permitted AI assistance is used, retain tool/model/purpose, verbatim machine-readable prompts and supplied files or their public sources (pp.12-14). Do not submit this generated educational prose as student-authored work. Never upload confidential/personal material to AI tools.
+- Obtain any necessary company permission for the chosen transfer channel. Górka's guidance restricts redistribution of supplied university files. Public GitHub is not a destination for confidential thesis delivery.

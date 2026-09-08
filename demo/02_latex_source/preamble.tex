@@ -1,0 +1,67 @@
+% Shared architecture, independently written configuration. Compile with XeLaTeX.
+\usepackage{fontspec}
+% Verdana matches the inspected setup. TeX Gyre Heros is a portable sans-serif fallback.
+% Fonts are loaded from your installation; no proprietary font is redistributed.
+\IfFontExistsTF{Verdana}{\setmainfont{Verdana}\setsansfont{Verdana}}{\setmainfont{TeX Gyre Heros}\setsansfont{TeX Gyre Heros}}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage[a4paper,inner=3cm,outer=2cm,top=2.5cm,bottom=2.5cm,footskip=1.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\raggedbottom
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5\baselineskip}
+\emergencystretch=2em
+\usepackage{graphicx}
+\graphicspath{{../03_figures_and_diagrams/}}
+\usepackage{booktabs,tabularx}
+\usepackage{xcolor}
+\usepackage{listings}
+\renewcommand{\lstlistlistingname}{List of Code Listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  frame=single,
+  breaklines=true,
+  showstringspaces=false,
+  captionpos=b,
+  columns=fullflexible
+}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+% Fira Math supplies a full sans-serif mathematics font, including operators.
+\setmathfont{FiraMath-Regular.otf}
+\usepackage{siunitx}
+\sisetup{detect-all,output-decimal-marker={,}}
+\usepackage{caption}
+% Gorka puts BOTH table and figure captions below the object.
+\captionsetup{font=normalsize,labelfont=bf}
+\usepackage{titlesec}
+\titleformat{\chapter}{\normalfont\bfseries\fontsize{14}{16}\selectfont}{\thechapter}{1em}{}
+\titleformat{\section}{\normalfont\bfseries\fontsize{12}{14}\selectfont}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries\fontsize{11}{13}\selectfont}{\thesubsection}{1em}{}
+\titlespacing*{\chapter}{0pt}{20pt}{20pt}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[LE,RO]{\thepage}\renewcommand{\headrulewidth}{0pt}}
+% Intentional blank versos have no header/footer; they preserve right-hand starts.
+\makeatletter
+\renewcommand{\cleardoublepage}{\clearpage\if@twoside\ifodd\c@page\else\hbox{}\thispagestyle{empty}\newpage\fi\fi}
+\makeatother
+\usepackage{csquotes,xurl}
+\usepackage[backend=biber,style=ieee,sorting=none]{biblatex}
+\addbibresource{references.bib}
+\usepackage{acro}
+\acsetup{list/display=all,list/sort=true,pages/display=none}
+\input{frontmatter/abbreviations}
+\usepackage[pdfversion=1.7,hidelinks]{hyperref}
+\hypersetup{pdftitle={\ThesisTitle},pdfauthor={\StudentName},bookmarksnumbered=true}
+% Use for unnumbered front matter that should appear in the contents.
+\newcommand{\frontchapter}[1]{\chapter*{#1}\phantomsection\addcontentsline{toc}{chapter}{#1}}

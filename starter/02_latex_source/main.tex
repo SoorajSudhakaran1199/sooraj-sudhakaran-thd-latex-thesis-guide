@@ -1,0 +1,62 @@
+% !TeX program = xelatex
+% ROOT FILE: build this document, not individual chapters.
+\documentclass[11pt,a4paper,twoside,openright]{report}
+\input{frontmatter/thesis_metadata}
+\input{preamble}
+\begin{document}
+% The binding cover and inner title are single-sided and unnumbered.
+% Blank versos are intentional so each begins on a right-hand page.
+\hypersetup{pageanchor=false}
+\input{frontmatter/coverpage}
+\cleardoublepage
+\input{frontmatter/titlepage}
+\cleardoublepage
+\hypersetup{pageanchor=true}
+\pagenumbering{Roman}
+\input{frontmatter/declaration}
+\cleardoublepage
+% Guideline order: declaration, abstract, acknowledgements, contents, lists.
+\input{frontmatter/abstract}
+\cleardoublepage
+\input{frontmatter/acknowledgements}
+\cleardoublepage
+% Never type contents entries or page numbers manually.
+\tableofcontents
+\cleardoublepage
+\phantomsection\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\cleardoublepage
+\phantomsection\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+\cleardoublepage
+% Captions on lstlisting environments generate this list automatically.
+\phantomsection\addcontentsline{toc}{chapter}{List of Code Listings}
+\lstlistoflistings
+\cleardoublepage
+\printacronyms[heading=chapter*,name=List of Abbreviations]
+\phantomsection\addcontentsline{toc}{chapter}{List of Abbreviations}
+\cleardoublepage
+\input{frontmatter/symbols}
+\cleardoublepage
+\pagenumbering{arabic}
+\input{chapters/ch1_introduction}
+\input{chapters/ch2_state_of_the_art}
+\input{chapters/ch3_requirement_management}
+\input{chapters/ch4_development_of_concepts}
+\input{chapters/ch5_development_of_product}
+\input{chapters/ch6_simulation}
+\input{chapters/ch7_realization_of_prototype}
+\input{chapters/ch8_verification_of_prototype}
+\input{chapters/ch9_conclusion_and_outlook}
+
+\cleardoublepage
+\printbibliography[heading=bibintoc,title={References}]
+\cleardoublepage
+% Separate appendix divider; alphabetic attachment labels avoid a Chapter 10.
+\frontchapter{Appendix}
+Supporting material is separated from the main argument. The following attachment
+contains the small, fictional dataset used in this educational example.
+\cleardoublepage
+\appendix
+\input{../01_appendix/appendix_a}
+\end{document}
