@@ -1,5 +1,7 @@
 # Your first build
 
+For step-by-step operating-system installation, extension setup, and your first thesis edit, start with the [complete installation walkthrough](../INSTALLATION.md). This page is the shorter build reference.
+
 LaTeX is a document typesetting system. A `.tex` file is plain text containing writing and layout commands. A compiler reads those instructions and produces a PDF. VS Code is the editor, not the compiler. Git saves snapshots locally; GitHub hosts repositories online. Neither Git nor a GitHub account is needed to build this project.
 
 ## Install

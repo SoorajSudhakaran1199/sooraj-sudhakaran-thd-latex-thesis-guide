@@ -15,6 +15,8 @@ This educational repository follows the structure in Prof. Górka's *Road to The
 
 ## Start here
 
+**New to LaTeX or VS Code? Follow the [complete installation walkthrough](INSTALLATION.md)** for Windows, macOS, or Linux, including extensions, terminal commands, and your first thesis edit.
+
 1. Open [demo-thesis.pdf](demo-thesis.pdf).
 2. Use [PDF-to-source map](docs/pdf-to-source.md) to find each feature.
 3. Follow [installation and first build](docs/getting-started.md).
@@ -85,6 +87,7 @@ Never commit confidential research, NDA-protected reports, private datasets, cre
 
 ## Documentation
 
+- [Complete beginner installation and VS Code setup](INSTALLATION.md)
 - [First installation and build](docs/getting-started.md)
 - [PDF to source map](docs/pdf-to-source.md)
 - [Feature walkthrough](docs/how-this-demo-works.md)
