@@ -181,7 +181,7 @@ The output is now **`02_latex_source/main.pdf`** inside your private project. Do
 
 ## 8. Make your first edit and write the thesis
 
-1. Open `02_latex_source/frontmatter/thesis_metadata.tex`. Replace the demonstration name, title, programme, supervisors and dates with your information.
+1. Open `02_latex_source/frontmatter/thesis_metadata.tex`. Replace the example name, programme, supervisors and dates with your information. Set `\ThesisTitleGerman` to your German title and `\ThesisTitle` to your English title; both print automatically on the cover and title page. The supplied robotics titles are general examples, while the short chapter content remains fictional teaching material.
 2. Open `02_latex_source/chapters/ch1_introduction.tex`. Replace its bracketed writing prompt with a short paragraph about your topic. Keep the existing `\chapter`, `\section`, and `\label` commands.
 3. Save with **Ctrl+S** or **Cmd+S**, then build the project again.
 4. Open `02_latex_source/main.pdf` and confirm your changed paragraph appears. This completes your first edit–build–preview cycle.
